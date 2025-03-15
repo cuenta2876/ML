@@ -1,5 +1,6 @@
 import os
 os.system("pip install --no-cache-dir torch transformers")
+os.system("pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu")
 import uvicorn
 from fastapi import FastAPI
 from routes.user_routes import router as user_router
