@@ -3,5 +3,5 @@ fastapi
 uvicorn
 gunicorn
 
-torch==2.1.0  # o la versión más reciente
+torch==2.1.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 transformers
