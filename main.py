@@ -5,6 +5,13 @@ from fastapi import FastAPI
 from routes.user_routes import router as user_router
 from routes.ai_routes import router as ai_router
 
+
+
+[2025-03-15 23:10:08 +0000] [1] [ERROR] Worker (pid:7) exited with code 3
+[2025-03-15 23:10:08 +0000] [1] [ERROR] Shutting down: Master
+[2025-03-15 23:10:08 +0000] [1] [ERROR] Reason: Worker failed to boot.
+
+
 app = FastAPI()
 
 app.include_router(user_router)
