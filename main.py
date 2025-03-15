@@ -1,4 +1,5 @@
 import os
+os.system("pip install --no-cache-dir torch transformers")
 import uvicorn
 from fastapi import FastAPI
 from routes.user_routes import router as user_router
